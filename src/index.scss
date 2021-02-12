@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+@import "./sass/variable.scss";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+
+}
+
+
+/* footer button*/
+
+@mixin button{
+
+  background-color: #e1Ab55;
+}
+.car .btnLarge{
+  @include button;
+}
+
+
+/* for border color*/
+
+@mixin hr{
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+}
+
+.hr1 {
+  @include hr;
+  border-top: 2px solid $headerfooter;
+  margin-top: 2 rem;
+}
+
+.hr2 {
+  @include hr;
+  border-top: 2px solid $clr;
+  margin-top: 2 rem;
+}
+
+
+.hr3 {
+  @include hr;
+  border-top: 5px solid $horizontal;
+ 
+}
+
+.hr4 {
+  @include hr;
+ 
+  border-top: 5px solid $headerfooter;
+ 
+}
+
+
+/* dotted  line */
+.hr5 {
+  border-top: 10px dotted $horizontal;
+}
+
+
+
+.main_header_left{
+  height: 24rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:black
+
+
+  
+& p{
+  font-size: 1 rem;
+}
+
+& h1{
+  font-size: 2rem;
+  margin: 0.5 rem 0 4rem 0;
+  text-transform: capitalize;
+  align-items: center;
+ 
+}
+
+& .txt_clr{
+  color: var(--main-color);
+}
+
+& button{
+  border: none;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px #000;
+  outline: none;
+
+  &:hover{
+    background-color:$headerfooter;
+  }
+}
+
+
+
+
+}
+
+
+
+.TOM container{
+  background-color: peru;
+}
+
+
+
+
+h3{
+  color: rgb(253, 252, 252);
+}
+
+.main_header_left .heading{
+  text-align: center;
+}
+
+.ourteam h1{
+  padding: 1rem;
+}
+
+
+
+/* footer  scss*/
+
+.footer-dark {
+  padding:50px 0;
+  color:#f0f9ff;
+  background-color:$headerfooter;
+
+
+  & h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  & ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+
+
+    & :a {
+      color:inherit;
+      text-decoration:none;
+      opacity:0.6;
+    }
+    
+    &  a:hover {
+      opacity:0.8;
+    }
+    
+  }
+  
+ 
+  
+  & .item.text {
+    margin-bottom:36px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+/* responsive code */
+
+@media(max-width:768px){
+  .main_header_left{
+      height: auto;
+      margin: 1 rem 0;
+  }
+
+  .main_header_right{
+      height: auto;
+      margin-top: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
